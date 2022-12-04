@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/okan3.0.css">
+    <title>okan3.0</title>
+</head>
+<body>
+
+<!-- header -->
+<header class="header">
+    <div class="wrapper">
+        <p class="header-above">おかん3.0</p>
+        <p class="logo logo-header"><a href="#"><img src="img/main.png" alt=""></a></p>
+    </div>
+
+    <!-- main visual -->
+    <!-- 献立自動決定ボタン -->
+    <div class="wrapper main-visual">
+        <button class="btn">今夜は....</button>
+    </div>
+</header>
+    
+<main>
+    <!-- 献立レシピ -->
+    <div id="karaage_recipe">
+        <!-- レシピの冒頭部分 -->
+        <div class="wrapper">
+        <h1 class="recipe_title">カリッとジューシーからあげ</h1>
+        <img src="img/karaage.png" alt="からあげ画像">
+            <p class="time">調理時間約50分</p>
+        </div>
+        <!-- 材料パート -->
+        <div class="wrapper">
+        <h2>材料【2人分】</h2>
+            <div class="recipe_item_list">
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">鶏もも肉</dt>
+                    <dd class="recipe_item_detail">1枚(300g)</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">片栗粉</dt>
+                    <dd class="recipe_item_detail">大さじ3</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">薄力粉</dt>
+                    <dd class="recipe_item_detail">大さじ3</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">サラダ油</dt>
+                    <dd class="recipe_item_detail">適量</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">レモン</dt>
+                    <dd class="recipe_item_detail">1/4個</dd>
+                </dl>
+                <p>☆たれ</p>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">しょうゆ</dt>
+                    <dd class="recipe_item_detail">大さじ1</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">酒</dt>
+                    <dd class="recipe_item_detail">大さじ1</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">おろししょうが</dt>
+                    <dd class="recipe_item_detail">小さじ1/2</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">おろしにんにく</dt>
+                    <dd class="recipe_item_detail">小さじ1/2</dd>
+                </dl>
+            </div>
+        </div>
+            <!-- つくりかたパート -->
+            <div class="wrapper process"><h2>つくりかた</h2>
+                <ul>
+                    <!-- proceeに1 2の通し番号を加える -->
+                    <li>1. レモン2等分の放射状に切る。</li>
+                    <li>2. ボウルに☆を入れて混ぜ、鶏肉を加えてもみこむ。冷蔵庫で30分置く</li>
+                    <li>3. 2に片栗粉、薄力粉を加えて混ぜる</li>
+                    <li>4. 鍋の底から2cm程度のサラダ油を入れて170℃に熱し、鶏肉を入れて火が通るまで中火で4～5分揚げる。器に唐揚げを盛り、レモンを添える。</li>
+                </ul>
+            </div>    
+    </div>
+
+    <div id="curry_recipe">
+        <div class="wrapper">
+        <h1 class="recipe_title">豚の旨味　ポークカレー</h1>
+        <img src="img/curry.png" alt="カレー画像">
+            <p class="time">調理時間約50分</p>
+        </div>
+        <div class="wrapper">
+        <h2>材料【2人分】</h2>
+            <div class="recipe_item_list">
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">ごはん</dt>
+                    <dd class="recipe_item_detail">お茶碗2杯(300g)</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">豚こま切れ肉</dt>
+                    <dd class="recipe_item_detail">150g</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">玉ねぎ</dt>
+                    <dd class="recipe_item_detail">1/2個</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">にんじん</dt>
+                    <dd class="recipe_item_detail">1/2本</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">じゃがいも</dt>
+                    <dd class="recipe_item_detail">1個(150g)</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">おろしにんにく</dt>
+                    <dd class="recipe_item_detail">小さじ1/2</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">サラダ油</dt>
+                    <dd class="recipe_item_detail">小さじ2</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">水</dt>
+                    <dd class="recipe_item_detail">400㏄</dd>
+                </dl>
+                    <p>☆調味料</p>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">ウスターソース</dt>
+                    <dd class="recipe_item_detail">大さじ1</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">ケチャップ</dt>
+                    <dd class="recipe_item_detail">大さじ1</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">市販のカレールウ</dt>
+                    <dd class="recipe_item_detail">３かけ(表示分量)</dd>
+                </dl>
+            </div>
+        </div>
+            <div class="wrapper process"><h2>つくりかた</h2>
+                <ul>
+                    <!-- proceeに1 2の通し番号を加える -->
+                    <li>1. 玉ねぎは食べやすい大きさに切る。にんじんは縦半分に切り、切り口を下にして5mm幅に切る。じゃがいもは食べやすい大きさに切り、水にさらして水気を切る。</li>
+                    <li>2. 鍋にサラダ油を入れて熱し、豚肉、おろしにんにくを入れて中火で肉の色が変わるまで炒める</li>
+                    <li>3. 玉ねぎ、にんじん、じゃがいもを加えて油が回るまで炒める。水を加えて煮立ったらふたをし、じゃがいもがやわらかくなるまで弱火で15分煮る。</li>
+                    <li>4. 火を止めて☆を加え、カレールウが溶けるまで混ぜる。再び弱火で熱し、とろみがつくまで混ぜながら5分程煮る。</li>
+                </ul>
+            </div>
+    </div>
+
+    <div id="gingerpork_recipe">
+        <div class="wrapper">
+        <h1 class="recipe_title">定食屋さんの味！豚のしょうが焼き</h1>
+        <img src="img/gingerpork.png" alt="しょうが焼き画像">
+            <p class="time">調理時間約30分</p>
+        </div>
+        <div class="wrapper">
+        <h2>材料【2人分】</h2>
+            <div class="recipe_item_list">
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">豚ロース肉(しょうが焼き用)</dt>
+                    <dd class="recipe_item_detail">250g</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">塩こしょう</dt>
+                    <dd class="recipe_item_detail">少々</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">酒</dt>
+                    <dd class="recipe_item_detail">大さじ1</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">片栗粉</dt>
+                    <dd class="recipe_item_detail">適量</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">サラダ油</dt>
+                    <dd class="recipe_item_detail">大さじ1</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">おろししょうが</dt>
+                    <dd class="recipe_item_detail">大さじ2</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">しょうゆ</dt>
+                    <dd class="recipe_item_detail">大さじ2</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">みりん</dt>
+                    <dd class="recipe_item_detail">大さじ2</dd>
+                </dl>
+                <dl class="recipe_item">
+                    <dt class="recipe_item_title">砂糖</dt>
+                    <dd class="recipe_item_detail">小さじ2</dd>
+                </dl>
+            </div>
+        </div>
+            <div class="wrapper process"><h2>つくりかた</h2>
+                <ul>
+                    <!-- proceeに1 2の通し番号を加える -->
+                    <li>1. 豚肉は脂身と赤身の間に数か所の切り込みを入れる。塩こしょう、酒をふり、片栗粉をまぶす。</li>
+                    <li>2. フライパンにサラダ油を入れて熱し、豚肉を入れて中火で焼く。</li>
+                    <li>3. 豚肉の色が変わったらおろししょうが、しょうゆ、みりん、砂糖を加えて汁気がなくなるまで煮からめる。</li>
+                </ul>
+            </div>
+    </div>
+    
+
+</main>
+
+<!-- メモボタン -->
+<div id="memo_wrap">
+<ul id="memo_button">
+    <li id="save">Save</li>
+    <li id="clear">Clear</li>
+</ul>
+</div>
+
+<table id="list"></table>
+
+
+<footer class="footer text-center">
+        <div class="wrapper">
+            <small class="copyrights">copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.
+            </small>
+        </div>
+</footer>
+<script>
+// 1-3の整数を作る
+const n = Math.ceil(Math.random() * 3);
+console.log(n);
+// ボタンクリックしたら、レシピを非表示から表示に切り替える
+$(function(){
+    $("button").click(function (){
+        if(n == 1){
+        $("#karaage_recipe").slideToggle();
+}else if(n == 2){
+        $("#curry_recipe").slideToggle();
+}else if(n == 3){
+        $("#gingerpork_recipe").slideToggle();
+
+}
+   
+});
+});
+
+
+
+//曜日配列
+let eMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+let week   = ["日", "月", "火", "水", "木", "金", "土"];
+
+//日時取得
+let now = new Date();            //日付取得準備（必須）！！
+let year = now.getFullYear();    //年
+let month = now.getMonth() + 1;  //月+１を足す
+let date = now.getDate();        //日
+let day = now.getDay();          //曜日（数値）
+
+//日時表示文字列の作成
+let recipe_date = year + "-" + month + "-" + date + "(" + week[day] + ") " ;
+
+//div要素id属性mainを指定
+$('#view').html(recipe_date);
+console.log(recipe_date);
+
+
+// recipe_titlesを定義づけ
+// 配列のインデックス番号で取り出す中身を指定する方法を活用
+const recipe_titles =  ["none","カリッとジューシーからあげ","豚の旨味　ポークカレー","定食屋さんの味！豚のしょうが焼き"];
+
+// ローカルストレージに日付・レシピを記録
+// recipe_titlesのインデックス番号を前述のランダム整数"n"に設定する
+
+
+// メモでレシピを残す、消すボタン挙動
+$("#save").on("click",function(){
+    // const key = $(recipe_date).val();
+    // const value = $(recipe_titles).val();
+    localStorage.setItem(recipe_date,recipe_titles[n]);
+    const html = '<tr><th>'+recipe_date+'</th><td>'+recipe_titles[n]+'</td></tr>';
+    $("#list").append(html);
+});
+
+$("#clear").on("click",function(){
+    localStorage.clear();
+    $("#list").empty();
+});
+
+for(let i=0; i<localStorage.length; i++){
+    const key   = localStorage.key(i);
+    const value = localStorage.getItem(key);
+    const html = '<tr><th>'+recipe_date+'</th><td>'+recipe_titles[n]+'</td></tr>';
+    $("#list").append(html);
+}
+
+</script>
+
+
+</body>
+</html>
